@@ -27,7 +27,8 @@ function Navbar() {
   return (
     <div className="navbar flex items-center justify-between border-b-[2px] border-[#3C3C3C] px-[10%] py-[20px] text-white ">
      <Link to={`/`}> <img
-        src="/src/assets/logo.png"
+        // src="/src/assets/logo.png"
+        src='https://i.postimg.cc/ZnJDbbwF/logo.png'
         alt="LOGO"
         className="w-[max(12vw,120px)]"
       /></Link>
