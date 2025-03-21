@@ -30,14 +30,16 @@ function Home() {
   }, [allCoin]);
 
   return (
-    <div className="px-[10px] pt-0 pb-[30px] ">
-      <div className="hero mx-auto my-[80px]  flex max-w-[600px] flex-col items-center gap-[30px] text-center text-white">
+    <div className="px-[10px] pt-0 pb-[30px]">
+      <div className="hero mx-auto my-[80px] flex max-w-[600px] flex-col items-center gap-[30px] text-center text-white">
         <h1 className="text-center text-[max(5vw,50px)]! leading-tight font-bold text-[#ffffff]">
           {/* Welcome <br /> to   */}
           {/* <span className='text-base mt-0 '>Ladakh’s Crypto Revolution</span> */}
-          <span className='text-lg italic mt-0'>Empowering Ladakh with Crypto</span>
-
-          <br />LACRYPT <br /> 
+          <span className="mt-0 text-lg italic">
+            Empowering Ladakh with Crypto
+          </span>
+          <br />
+          LACRYPT <br />
         </h1>
         {/* <p className="mx-auto mt-4 w-[80%] text-center font-[#d1d1d1] text-lg leading-relaxed">
           Explore the future of finance with LACRYPT. 
@@ -54,13 +56,13 @@ function Home() {
             value={input}
             list="coinlist"
             placeholder="Search cryto.."
-            className="flex-grow rounded-none pl-[10px] text-base text-black outline-none "
+            className="flex-grow rounded-none pl-[10px] text-base text-black outline-none"
           />
-         <datalist id="coinlist" className="appearance-none"> 
-  {allCoin.map((item, index) => (
-    <option key={index} value={item.name} />
-  ))}
-</datalist>
+          <datalist id="coinlist" className="appearance-none">
+            {allCoin.map((item, index) => (
+              <option key={index} value={item.name} />
+            ))}
+          </datalist>
 
           <button className="cursor-pointer rounded-lg border bg-[#7927ff] px-[30px] py-[10px] text-base text-white">
             Search
