@@ -1,7 +1,7 @@
 
 @media (max-width: 768px){
     .table-layout {
-       grid-template-columns: 0.5fr 3fr 1fr 1fr;
+       grid-template-columns: 0.5fr 3fr 1.5fr 1fr;
     }
     .market-cap {
         display: none;
